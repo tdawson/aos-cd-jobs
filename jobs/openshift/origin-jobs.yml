@@ -5,7 +5,7 @@
 #    parameters:
 #      - label:
 #          name: node
-#          default: paas-sig-ci-slave01
+#          default: aos-ci-cd-slave in the openshift-enterprise tenant
 #          description: "The node on which to run the job"
 
 - job-template:
@@ -19,7 +19,7 @@
           type: user-defined
           name: TOPOLOGY
           values:
-            - os_origin-3node-cluster.yml
+            - os_origin-3node-cluster
       - axis:
          type: slave
          name: nodes
